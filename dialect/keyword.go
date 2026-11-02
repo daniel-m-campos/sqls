@@ -390,6 +390,7 @@ const (
 	DatabaseDriverH2         DatabaseDriver = "h2"
 	DatabaseDriverVertica    DatabaseDriver = "vertica"
 	DatabaseDriverClickhouse DatabaseDriver = "clickhouse"
+	DatabaseDriverDuckDB     DatabaseDriver = "duckdb"
 )
 
 func DataBaseKeywords(driver DatabaseDriver) []string {
@@ -416,6 +417,8 @@ func DataBaseKeywords(driver DatabaseDriver) []string {
 		return verticaKeywords
 	case DatabaseDriverClickhouse:
 		return clickhouseKeywords
+	case DatabaseDriverDuckDB:
+		return duckdbKeywords
 	default:
 		return sqliteKeywords
 	}
@@ -444,6 +447,8 @@ func DataBaseFunctions(driver DatabaseDriver) []string {
 	case DatabaseDriverVertica:
 		return verticaReservedWords
 	case DatabaseDriverClickhouse:
+		return []string{}
+	case DatabaseDriverDuckDB:
 		return []string{}
 	default:
 		return []string{}
