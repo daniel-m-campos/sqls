@@ -20,6 +20,7 @@ sqls aims to provide advanced intelligence for you to edit sql in your own edito
 - MSSQL([go-mssqldb](https://github.com/microsoft/go-mssqldb))
 - H2([pgx](https://github.com/CodinGame/h2go))
 - Vertica([vertica-sql-go](https://github.com/vertica/vertica-sql-go))
+- DuckDB([duckdb-go](https://github.com/duckdb/duckdb-go))
 
 ### Language Server Features
 
@@ -237,7 +238,7 @@ The first setting in `connections` is the default connection.
 | Key            | Description                                 |
 | -------------- | ------------------------------------------- |
 | alias          | Connection alias name. Optional.            |
-| driver         | `mysql`, `postgresql`, `sqlite3`, `mssql`, `h2`. Required. |
+| driver         | `mysql`, `postgresql`, `sqlite3`, `mssql`, `h2`, `duckdb`. Required. |
 | dataSourceName | Data source name.                           |
 | proto          | `tcp`, `udp`, `unix`.                       |
 | user           | User name                                   |
@@ -266,6 +267,10 @@ See also.
 - <https://github.com/go-sql-driver/mysql#dsn-data-source-name>
 - <https://pkg.go.dev/github.com/jackc/pgx/v4>
 - <https://github.com/mattn/go-sqlite3#connection-string>
+- DuckDB: the path of the database file. It is opened read-only, and only while a
+  query runs, so sqls never blocks another process writing to the file. To run
+  statements that modify the database from the editor set
+  `params: {access_mode: read_write}`.
 
 ## Contributors
 

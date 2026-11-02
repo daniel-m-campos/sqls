@@ -14,14 +14,15 @@
             "type": "string"
           },
           "driver": {
-            "description": "mysql, postgresql, sqlite3, mssql, h2. Required",
+            "description": "mysql, postgresql, sqlite3, mssql, h2, duckdb. Required",
             "type": "string",
             "enum": [
               "mysql",
               "postgresql",
               "sqlite3",
               "mssql",
-              "h2"
+              "h2",
+              "duckdb"
             ]
           },
           "dataSourceName": {
