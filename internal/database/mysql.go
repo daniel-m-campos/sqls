@@ -8,7 +8,7 @@ import (
 	"strconv"
 
 	"github.com/go-sql-driver/mysql"
-	"github.com/sqls-server/sqls/dialect"
+	"github.com/daniel-m-campos/sqls/dialect"
 	"golang.org/x/crypto/ssh"
 )
 

@@ -6,8 +6,8 @@ import (
 	"fmt"
 
 	"github.com/sourcegraph/jsonrpc2"
-	"github.com/sqls-server/sqls/internal/completer"
-	"github.com/sqls-server/sqls/internal/lsp"
+	"github.com/daniel-m-campos/sqls/internal/completer"
+	"github.com/daniel-m-campos/sqls/internal/lsp"
 )
 
 func (s *Server) handleTextDocumentCompletion(ctx context.Context, conn *jsonrpc2.Conn, req *jsonrpc2.Request) (result interface{}, err error) {

@@ -6,13 +6,13 @@ import (
 	"fmt"
 
 	"github.com/sourcegraph/jsonrpc2"
-	"github.com/sqls-server/sqls/ast"
-	"github.com/sqls-server/sqls/ast/astutil"
-	"github.com/sqls-server/sqls/internal/database"
-	"github.com/sqls-server/sqls/internal/lsp"
-	"github.com/sqls-server/sqls/parser"
-	"github.com/sqls-server/sqls/parser/parseutil"
-	"github.com/sqls-server/sqls/token"
+	"github.com/daniel-m-campos/sqls/ast"
+	"github.com/daniel-m-campos/sqls/ast/astutil"
+	"github.com/daniel-m-campos/sqls/internal/database"
+	"github.com/daniel-m-campos/sqls/internal/lsp"
+	"github.com/daniel-m-campos/sqls/parser"
+	"github.com/daniel-m-campos/sqls/parser/parseutil"
+	"github.com/daniel-m-campos/sqls/token"
 )
 
 func (s *Server) handleDefinition(ctx context.Context, conn *jsonrpc2.Conn, req *jsonrpc2.Request) (result interface{}, err error) {

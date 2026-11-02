@@ -3,9 +3,9 @@ package handler
 import (
 	"testing"
 
-	"github.com/sqls-server/sqls/internal/config"
-	"github.com/sqls-server/sqls/internal/database"
-	"github.com/sqls-server/sqls/internal/lsp"
+	"github.com/daniel-m-campos/sqls/internal/config"
+	"github.com/daniel-m-campos/sqls/internal/database"
+	"github.com/daniel-m-campos/sqls/internal/lsp"
 )
 
 type completionTestCase struct {

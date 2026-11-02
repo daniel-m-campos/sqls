@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/sqls-server/sqls/internal/database"
+	"github.com/daniel-m-campos/sqls/internal/database"
 )
 
 func TestGetConfig(t *testing.T) {

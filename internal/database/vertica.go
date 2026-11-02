@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/sqls-server/sqls/dialect"
+	"github.com/daniel-m-campos/sqls/dialect"
 	_ "github.com/vertica/vertica-sql-go"
 )
 

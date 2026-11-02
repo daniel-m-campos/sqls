@@ -14,10 +14,10 @@ import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/olekukonko/tablewriter/tw"
 	"github.com/sourcegraph/jsonrpc2"
-	"github.com/sqls-server/sqls/ast"
-	"github.com/sqls-server/sqls/internal/database"
-	"github.com/sqls-server/sqls/internal/lsp"
-	"github.com/sqls-server/sqls/parser"
+	"github.com/daniel-m-campos/sqls/ast"
+	"github.com/daniel-m-campos/sqls/internal/database"
+	"github.com/daniel-m-campos/sqls/internal/lsp"
+	"github.com/daniel-m-campos/sqls/parser"
 )
 
 const (

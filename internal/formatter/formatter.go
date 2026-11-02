@@ -4,12 +4,12 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/sqls-server/sqls/ast"
-	"github.com/sqls-server/sqls/ast/astutil"
-	"github.com/sqls-server/sqls/internal/config"
-	"github.com/sqls-server/sqls/internal/lsp"
-	"github.com/sqls-server/sqls/parser"
-	"github.com/sqls-server/sqls/token"
+	"github.com/daniel-m-campos/sqls/ast"
+	"github.com/daniel-m-campos/sqls/ast/astutil"
+	"github.com/daniel-m-campos/sqls/internal/config"
+	"github.com/daniel-m-campos/sqls/internal/lsp"
+	"github.com/daniel-m-campos/sqls/parser"
+	"github.com/daniel-m-campos/sqls/token"
 )
 
 func Format(text string, params lsp.DocumentFormattingParams, cfg *config.Config) ([]lsp.TextEdit, error) {

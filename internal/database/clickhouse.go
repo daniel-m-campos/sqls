@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	clickhouse "github.com/ClickHouse/clickhouse-go/v2"
-	"github.com/sqls-server/sqls/dialect"
+	"github.com/daniel-m-campos/sqls/dialect"
 	"golang.org/x/crypto/ssh"
 )
 

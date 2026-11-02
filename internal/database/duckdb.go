@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/duckdb/duckdb-go/v2"
-	"github.com/sqls-server/sqls/dialect"
+	"github.com/daniel-m-campos/sqls/dialect"
 )
 
 func init() {

@@ -10,7 +10,7 @@ import (
 
 	"github.com/jfcote87/sshdb"
 	mssql "github.com/microsoft/go-mssqldb"
-	"github.com/sqls-server/sqls/dialect"
+	"github.com/daniel-m-campos/sqls/dialect"
 )
 
 func init() {

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/sqls-server/sqls/internal/lsp"
+	"github.com/daniel-m-campos/sqls/internal/lsp"
 )
 
 func TestGetBeforeCursorText(t *testing.T) {
