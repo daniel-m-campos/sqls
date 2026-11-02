@@ -71,7 +71,7 @@ func (c *DBConfig) Validate() error {
 			}
 		}
 	case dialect.DatabaseDriverSQLite3:
-	case dialect.DatabaseDriverH2:
+	case dialect.DatabaseDriverH2, dialect.DatabaseDriverDuckDB:
 		if c.DataSourceName == "" {
 			return errors.New("required: connections[].dataSourceName")
 		}
