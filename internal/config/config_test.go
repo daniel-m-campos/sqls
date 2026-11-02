@@ -139,6 +139,31 @@ func TestGetConfig(t *testing.T) {
 			errMsg:  "failed validation, required: connections[].dataSourceName",
 		},
 		{
+			name: "duckdb",
+			args: args{
+				fp: "duckdb.yml",
+			},
+			want: &Config{
+				Connections: []*database.DBConfig{
+					{
+						Alias:          "sqls_duckdb",
+						Driver:         "duckdb",
+						DataSourceName: "/home/sqls-server/analytics.duckdb",
+						Params:         map[string]string{"access_mode": "read_write"},
+					},
+				},
+			},
+		},
+		{
+			name: "duckdb no dsn",
+			args: args{
+				fp: "duckdb_no_dsn.yml",
+			},
+			want:    nil,
+			wantErr: true,
+			errMsg:  "failed validation, required: connections[].dataSourceName",
+		},
+		{
 			name: "no ssh host",
 			args: args{
 				fp: "no_ssh_host.yml",

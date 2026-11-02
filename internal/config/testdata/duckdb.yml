@@ -1,0 +1,6 @@
+connections:
+  - alias: sqls_duckdb
+    driver: duckdb
+    dataSourceName: /home/sqls-server/analytics.duckdb
+    params:
+      access_mode: read_write
